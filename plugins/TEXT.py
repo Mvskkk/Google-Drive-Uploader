@@ -9,7 +9,7 @@ MEGA_EMAIL = "rpdrive@hi2.in"
 MEGA_PASSWORD = "rpdrive@hi2.in"
 
 
-START = " Hi {}  \nI am Drive Uploader Bot and I will Uploads files to your Google Drive from URLs. Please Authorise to use me by using /auth "
+START = " Hi {}  \nI am Drive Uploader Bot and I will Uploads files to your Google Drive from URLs.\nPlease Authorise to use me by using /auth "
 
 
 DP_DOWNLOAD = "Dropbox Link !! Downloading Started ..."
