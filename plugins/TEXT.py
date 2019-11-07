@@ -32,5 +32,5 @@ DOWNLOAD_URL = "Your File Uploaded Successfully \n\n <b>Filename</b> : {} \n\n <
 AUTH_ERROR = "AUTH Error !! Please Send me a valid Token or Re-Authorise"
 OPENLOAD = True
 DROPBOX = True
-MEGA = True
+MEGA = False
 
