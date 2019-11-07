@@ -158,18 +158,20 @@ def UPLOAD(update, context):
            # Here IS Mega Links stuffs
         elif 'mega.nz' in url:
 
-            try:
-                print("Downlaoding Started")
-                sent_message.edit_text(TEXT.DOWN_MEGA)
-                m = Mega.from_credentials(TEXT.MEGA_EMAIL, TEXT.MEGA_PASSWORD)
-                filename = m.download_from_url(url)
-                print("Downloading Complete Mega :", filename)
-                sent_message.edit_text(TEXT.DOWN_COMPLETE)
+            #try:
+               # print("Downlaoding Started")
+               # sent_message.edit_text(TEXT.DOWN_MEGA)
+               # m = Mega.from_credentials(TEXT.MEGA_EMAIL, TEXT.MEGA_PASSWORD)
+                #filename = m.download_from_url(url)
+               # print("Downloading Complete Mega :", filename)
+               # sent_message.edit_text(TEXT.DOWN_COMPLETE)
 
-                DownloadStatus = True
-            except Exception as e:
-                print("Mega Downloding Error :", e)
-                sent_message.edit_text("Mega Downloading Error !!")
+                DownloadStatus = False
+                sent_message.edit_text("Mega is currently not supported")
+
+           # except Exception as e:
+               # print("Mega Downloding Error :", e)
+               # sent_message.edit_text("Mega Downloading Error !!")
 
         else:
             try:
