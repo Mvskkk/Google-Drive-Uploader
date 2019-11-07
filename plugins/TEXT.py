@@ -17,12 +17,12 @@ OL_DOWNLOAD = "Openload Link !! Downloading Started ... \n\nOpenload Links are E
 PROCESSING = "Processing your Request ...!!"
 DOWN_TWO = True
 DOWNLOAD = "Downloading Started ..."
-DOWN_MEGA = "Downloading Started... \n\nMega Links are Extremely Slow "
+DOWN_MEGA = "Mega Links are Currently not Supported "
 DOWN_COMPLETE = "Downloading Complete !!"
 NOT_AUTH = "You are not Authorised to use this Bot \n\nPlease Authorise me by using /auth "
-REVOKE_FAIL = "You are Already UnAuthorised.\n\nPlease use /auth to Authorise "
+REVOKE_FAIL = "You are Already Un-Authorised.\n\nPlease use /auth to Authorise "
 AUTH_SUCC = "Authorised Successfully  !! \n\nNow Send me a Direct Link to Upload "
-ALREADY_AUTH = "You are already Authorised ! \n\nWanna change Drive Account use /revoke "
+ALREADY_AUTH = "You are already Authorised ! \n\nWanna change Drive Account \nUse /revoke "
 AUTH_URL = 'To Authorise your Account \n\n<a href ="{}">Vist this URL</a> \n\nGenerate and Copy your Google Drive Token and Send it to me'
 UPLOADING = "Download Complete !! \nUploading Your file"
 REVOKE_TOK = " Your Token is Revoked Successfully !! \n\nUse /auth to Re-Authorise your Drive Account"
@@ -32,5 +32,5 @@ DOWNLOAD_URL = "Your File Uploaded Successfully \n\n <b>Filename</b> : {} \n\n <
 AUTH_ERROR = "AUTH Error !! Please Send me a valid Token or Re-Authorise"
 OPENLOAD = True
 DROPBOX = True
-MEGA = False
+MEGA = True
 
