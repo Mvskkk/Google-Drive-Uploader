@@ -5,8 +5,8 @@ drive_folder_name = "Drive Uploader"
 
 
 # Enter Your Mega email And Pass (Required)
-MEGA_EMAIL = "bearyan8@yandex.com"
-MEGA_PASSWORD = "bearyan8@yandex.com"
+MEGA_EMAIL = "rpdrive@hi2.in"
+MEGA_PASSWORD = "rpdrive@hi2.in"
 
 
 START = " Hi {}  \nI am Drive Uploader Bot and I will Uploads files to your Google Drive from URLs. Please Authorise to use me by using /auth "
