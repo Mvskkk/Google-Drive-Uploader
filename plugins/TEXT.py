@@ -1,7 +1,7 @@
 
 
 # Here is Your Drive Folder Name You can Replace it with Your Desire name(Optional)
-drive_folder_name = "Drive Uploader"
+drive_folder_name = "RP Drive Uploader"
 
 
 # Enter Your Mega email And Pass (Required)
