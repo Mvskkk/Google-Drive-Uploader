@@ -151,7 +151,8 @@ def UPLOAD(update, context):
                 url.split("/")[-1]))
             sent_message.edit_text(TEXT.DP_DOWNLOAD)
             # filename = wget.download(url)
-            filename = wget_dl(str(url))
+            #filename = wget_dl(str(url))
+            filename = wget_dl(url, sent_message)
             print("Downloading Complete : {}".format(filename))
             sent_message.edit_text(TEXT.DOWN_COMPLETE)
             DownloadStatus = True
