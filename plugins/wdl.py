@@ -1,6 +1,8 @@
 import math
 import time
 import wget
+from pyDownload import Downloader as mydl
+
 
 def get_size(size):
     units = ["Bytes", "KB", "MB", "GB", "TB", "PB", "EB"]
@@ -91,3 +93,33 @@ def wget_dl(url, msg):
 		return file_path
 	except Exception as e:
 		return "error" + str(e)
+	
+def py_dl(url, msg):
+	print("py Download")
+	display_message=""
+	try:
+		download = mydl(url=url, auto_start=False, multithreaded=False)
+		start = time.time()
+		download.start_download(wait_for_download=False)
+		while download.is_running:
+			current = download.bytes_downloaded
+			total = download.download_size
+			diff = time.time() - start
+			if current != 0 and total != None:
+				text = measure_progress(current, total, start, time_gap=1)
+				if text != display_message and text != "empty":
+					try:
+						print(text)
+						msg.edit_text(text, parse_mode="HTML")
+						time.sleep(5)
+						display_message = text
+					except Exception as e:
+						print(str(e))
+		
+		if download.is_running:
+			time.sleep(1)
+		file_path = download.file_name
+		return filepath
+	except Exception as e:
+		print(e)
+		return "error"
