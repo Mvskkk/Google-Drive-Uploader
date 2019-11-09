@@ -90,4 +90,4 @@ def wget_dl(url, msg):
 		file_path = wget.download(url, bar=lambda c, t, w: progress_bar_for_wget(c, t, start, msg))
 		return file_path
 	except Exception as e:
-		return "Error" + str(e)
+		return "error" + str(e)
