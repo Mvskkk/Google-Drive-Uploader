@@ -18,7 +18,7 @@ from time import time
 import subprocess
 # from plugins.dlopenload import DLOPENLOAD
 from plugins.dpbox import DPBOX
-from plugins.wdl import wget_dl
+from plugins.wdl import wget_dl, py_dl
 import re
 from mega import Mega
 # import importlib.util
@@ -152,7 +152,7 @@ def UPLOAD(update, context):
             sent_message.edit_text(TEXT.DP_DOWNLOAD)
             # filename = wget.download(url)
             #filename = wget_dl(str(url))
-            filename = wget_dl(url, sent_message)
+            filename = py_dl(url, sent_message)
             print("Downloading Complete : {}".format(filename))
             sent_message.edit_text(TEXT.DOWN_COMPLETE)
             DownloadStatus = True
@@ -182,7 +182,7 @@ def UPLOAD(update, context):
                 sent_message.edit_text(TEXT.DOWNLOAD)
                 # filename = wget.download(url)
                 #filename = wget_dl(str(url))
-                filename = wget_dl(url, sent_message)
+                filename = py_dl(url, sent_message)
                 print("Downloading Complete : {}".format(filename))
                 sent_message.edit_text(TEXT.DOWN_COMPLETE)
                 DownloadStatus = True
